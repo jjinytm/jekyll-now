@@ -1,0 +1,20 @@
+---
+layout: post
+title: RD Tip
+---
+
+웹뷰어의 상단에 저장버튼들을 활성화/비활성화 할려면 다음의 메소드를 사용하면 된다.
+Rdviewer.DisableToolbar(11);
+
+Rdviewer  = viewer객체 각자 정해놓은 객체명을 사용한다.
+DisableToolbar(11) = 인자로 들어가는 숫자는 타입을 의미한다. 아래와 같다.
+
+"0-파일저장,1-인쇄,2-찾기,3-목차만들기,4-화면확대,5-화면축소,12-리포팅중지,13-Microsoft Excel로보기,14-HWP로보기, 15-PDF로보기, 16-Microsoft Powerpoint로보기, 17-Microsoft Word로보기"
+
+반대로 활성화 할 경우에는 다음과 같이 사용한다.
+Rdviewer.EnableToolbar(11);
+  
+활성화의 경우에는 사용자의 PC에 해당하는 OCX가 설치되어있어야 한다. 
+  
+기본적으로는 설치되어 잇는 OCX의 경우에는 버튼 활성화된 상태가 default이므로, 
+상황에 따라 필요없는 버튼들을 DisableToolbar 메서드를 사용하여 비활성화 처리하도록 하자.
