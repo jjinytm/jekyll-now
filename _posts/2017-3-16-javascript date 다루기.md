@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 자바스크립트 date 다루기
 category: javascript
 ---
