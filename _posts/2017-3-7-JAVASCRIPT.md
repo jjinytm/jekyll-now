@@ -8,6 +8,8 @@ Select option by index
 document.all.SELECTNAME.options[index].selected = true;
 ```
 
-정규식 표현으로 문자열내 html 태크 제거하기.
+정규식 표현으로 문자열내 html 태그 제거하기.
+```
 var str = "<br>내용<br>";
 str = str.replace(/(<([^>]+)>)/ig," ");
+```
