@@ -1,6 +1,7 @@
 ---
 layout: category
 title: JavaScript
+category: javascript
 ---
 
 - 인덱스를 지정하여 해당하는 옵션을 선택(selected) 하기
