@@ -23,4 +23,3 @@ format = function date2str(x, y) {
 	    });
 	}
 ```
- 
