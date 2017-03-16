@@ -16,7 +16,7 @@ layout: default
     {% for category in site.categories %}
         <a href="/category/{{ category[0] }}/" style="text-decoration: none;">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
-          ------------------------
+          <p>------------------------</p>
         </a>
         <br />
     {% endfor %}
