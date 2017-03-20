@@ -22,4 +22,8 @@ format = function date2str(x, y) {
 	        return x.getFullYear().toString().slice(-v.length)
 	    });
 	}
+
+	//사용예
+	var formatDate = format(new Date(), 'yyyy/MM/dd');
+
 ```
