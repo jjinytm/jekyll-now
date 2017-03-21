@@ -10,10 +10,9 @@ layout: default
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
           <p class="cateline">------------------------</p>
         </a>
-        <br />
       </div>
     {% endfor %}
-  <div style="float:right; width:70%">
+  <div style="float:right; width:70%; border: 1px solid blue">
     <h1>{{ page.title }}</h1>
     <p />
     <div class="entry">
