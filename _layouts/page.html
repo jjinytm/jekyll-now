@@ -3,8 +3,8 @@ layout: default
 ---
 <script>
   function view_sub(divname) {
-    alert(divname);
     document.getElementById('view_sub_'+divname).style.display="block"; 
+    $("*[id~='vie_sub']:not('[id="view_sub_"+divname'])").css("display","none");
   }
 </script>
 <article class="page">
