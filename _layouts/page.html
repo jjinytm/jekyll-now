@@ -12,7 +12,7 @@ layout: default
     {% for category in site.categories %}
       <p>
         <!-- <a href="/category/{{ category[0] }}/" style="text-decoration: none;"> -->
-        <a href="javscript:view_sub()">
+        <a href="javascript:view_sub()">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
         <div name="view_sub" style="display:none">
