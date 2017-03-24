@@ -2,8 +2,8 @@
 layout: default
 ---
 <script>
-  function view_sub() {
-    document.getElementById('view_sub'+{{ category[0] }}).style.display="block"; 
+  function view_sub(divname) {
+    document.getElementById('view_sub_'+divname).style.display="block"; 
   }
 </script>
 <article class="page">
@@ -12,10 +12,10 @@ layout: default
     {% for category in site.categories %}
       <p>
         <!-- <a href="/category/{{ category[0] }}/" style="text-decoration: none;"> -->
-        <a href="javascript:view_sub()">
+        <a href="javascript:view_sub({{ category[0] }})">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
-        <div id="view_sub_"{{ category[0] }} style="display:none">
+        <div id="view_sub_{{ category[0] }}" style="display:none">
           {{ category[0] }}
         </div>
       </p>
