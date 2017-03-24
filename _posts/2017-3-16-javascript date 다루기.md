@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: page
 title: 자바스크립트 date 다루기
 category: javascript
 ---
 
 - date를 정의한 표시형식대로 리턴하기
+
 ```javascript
 format = function date2str(x, y) {
 	    var z = {
