@@ -3,7 +3,7 @@ layout: default
 ---
 <script>
   function view_sub() {
-    document.getElementById('view_sub').style.display="block"; 
+    document.getElementById('view_sub'+{{ category[0] }}).style.display="block"; 
   }
 </script>
 <article class="page">
@@ -15,7 +15,7 @@ layout: default
         <a href="javascript:view_sub()">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
-        <div id="view_sub" style="display:none">
+        <div id="view_sub_"{{ category[0] }} style="display:none">
           {{ category[0] }}
         </div>
       </p>
