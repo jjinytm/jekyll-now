@@ -4,7 +4,7 @@ layout: default
 <script>
   function view_sub(divname) {
     document.getElementById('view_sub_'+divname).style.display="block"; 
-    $("*[id~='view_sub']:[id!='view_sub_'+div_name]").css("display","none");
+    $("div[id^='view_sub'][id!='view_sub_"+divname+"']").css("display","none"); 
   }
 </script>
 <article class="page">
