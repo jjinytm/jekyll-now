@@ -18,7 +18,12 @@ layout: default
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
         <div id="view_sub_{{ category[0] }}" style="display:none">
-          {{ category[0] }}
+          {% for post in site,categories.[page.category] %}
+          <div class="post-preview">
+            <h2 class="post-title">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </div>
         </div>
       </p>
     {% endfor %}
