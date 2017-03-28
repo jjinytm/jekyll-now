@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CSS) display 사용시 잔상생기는 
+title: CSS) display 사용시 잔상생기는문제 
 category: html
 ---
 
