@@ -19,7 +19,7 @@ layout: default
         </a>
         <div id="view_sub_{{ category[0] }}" style="display:none">a
           <span style="color:red">{{ page.category }}</span>
-          {% for post in site.categories.category[0] %}
+          {% for post in category[0] %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">
