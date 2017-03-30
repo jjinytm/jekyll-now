@@ -5,6 +5,17 @@
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous">
     </script>
+    <script>
+      function showcate() {
+       var cate_div = document.getElementById('cate_div');
+        if(cate_div.style.display == "none") {
+         cate_div.style.display = "block"; 
+        } else {
+         cate_div.style.display = "none"; 
+        }
+      }
+    </script>
+    
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -21,11 +32,16 @@
 
   <body>
     
+  <!--  button div for showing categories -->
+    <div id="showCateBtn" style="float:top">
+      <input type="button" value="showCate" onclick="javascript:showcate()"/>
+    </div>
+    
     <div class="wrapper-masthead">
       <div class="container">
         
         
-        <div id="cate_div">
+        <div id="cate_div" style="display:none">
           {% for category in site.categories %}
           {% assign cates = category[0] %}
           <p>
