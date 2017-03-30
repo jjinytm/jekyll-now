@@ -22,7 +22,7 @@ layout: default
           {% for post in site.categories[cates] %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
+              <span style="font-size:10px; color:#000000">{{ post.title }}</span>
             {% if post.subtitle %}
             {{ post[0].subtitle }}
             {% endif %}
