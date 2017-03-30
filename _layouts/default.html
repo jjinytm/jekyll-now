@@ -20,16 +20,42 @@
   </head>
 
   <body>
+    
     <div class="wrapper-masthead">
       <div class="container">
+        
+        
+        <div id="cate_div">
+          {% for category in site.categories %}
+          {% assign cates = category[0] %}
+          <p>
+            <a href="javascript:view_sub('{{ category[0] }}')">
+              {{ category[0] }}
+            </a>
+            <div id="view_sub_{{ category[0] }}" style="display:none"> 
+                {% for post in site.categories[cates] %}
+                <div class="post-preview">
+                  <a href="{{ post.url | prepend: site.baseurl }}">
+                   &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#000000">{{ post.title }}</span>
+                   {% if post.subtitle %}
+                    {{ post[0].subtitle }}
+                     {% endif %}
+                  </a>
+              </div>
+              {% endfor %}
+            </div>
+          </p>
+          {% endfor %}
+            
+        </div>
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
+          
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-
+      
           <nav>
             <!-- <a href="{{ site.baseurl }}/">Blog</a>-->
             <!-- <a href="{{ site.baseurl }}/about">About</a>-->
