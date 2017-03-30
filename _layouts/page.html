@@ -18,9 +18,9 @@ layout: default
         <a href="javascript:view_sub('{{ category[0] }}')">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
-        <div id="view_sub_{{ category[0] }}" style="display:none">14
+        <div id="view_sub_{{ category[0] }}" style="display:none">15
           <span style="color:red">{{ category[0] }}</span>
-          {% for post in site.categories.oracle %}
+          {% for post in site.categories.category[0] %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">
