@@ -5,7 +5,7 @@ layout: default
 <script>
   function view_sub(divname) {
     alert(divname);
-    
+    {% assign catename=divname %}
     document.getElementById('view_sub_'+divname).style.display="block"; 
     $("div[id^='view_sub'][id!='view_sub_"+divname+"']").css("display","none"); 
   }
@@ -19,9 +19,9 @@ layout: default
         <a href="javascript:view_sub('{{ category[0] }}')">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
-        <div id="view_sub_{{ category[0] }}" style="display:none">e
+        <div id="view_sub_{{ category[0] }}" style="display:none">f
           <span style="color:red">{{ page.category }}</span>
-          {% for post in site.categories.jquery %}
+          {% for post in site.categories.catename %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">
