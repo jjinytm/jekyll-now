@@ -17,7 +17,7 @@ layout: default
         <a href="javascript:view_sub('{{ category[0] }}')">
           {% if category[0] == 'aws' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
-        <div id="view_sub_{{ category[0] }}" style="display:none">c
+        <div id="view_sub_{{ category[0] }}" style="display:none">d
           <span style="color:red">{{ page.category }}</span>
           {% for post in site.categories.category %}
           <div class="post-preview">
