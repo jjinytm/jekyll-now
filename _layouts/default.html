@@ -9,13 +9,13 @@
       function showcate() {
        var cate_div = document.getElementById('cate_div');
         if(cate_div.style.display == "none") {
-         cate_div.style.display = "block"; 
+         cate_div.style.display = "block";
         } else {
-         cate_div.style.display = "none"; 
+         cate_div.style.display = "none";
         }
       }
     </script>
-    
+
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -31,13 +31,13 @@
   </head>
 
   <body>
-    
+
   <!--  button div for showing categories -->
     <div id="showCateBtn" style="float:top">
       <input type="button" value="showCate" onclick="javascript:showcate()"/>
     </div>
     <div id="cate_div" style="width:300px; display:none; position:absolute; float:left; background-color:#ffffff; border:1px solid #1a1a1a; z-index:1000px">
-      {% for category in site.categories %}      
+      {% for category in site.categories %}
       {% assign cates = category[0] %}
       <p>
         <a href="javascript:view_sub('{{ category[0] }}')">
@@ -47,7 +47,7 @@
           {% for post in site.categories[cates] %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}">
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#000000">{{ post.title }}</span> 
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#000000">{{ post.title }}</span>
                 {% if post.subtitle %}
                   {{ post[0].subtitle }}
                 {% endif %}
@@ -58,18 +58,18 @@
       </p>
       {% endfor %}
     </div>
-  
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
+
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-          
-      
+
+
           <nav>
             <!-- <a href="{{ site.baseurl }}/">Blog</a>-->
             <!-- <a href="{{ site.baseurl }}/about">About</a>-->
@@ -84,7 +84,7 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
+        <footer class="footer"> 터터터
           {% include svg-icons.html %}
         </footer>
       </div>
