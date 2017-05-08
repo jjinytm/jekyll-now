@@ -47,7 +47,7 @@
           {% for post in site.categories[cates] %}
           <div class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl }}" class="subhover">
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#FFFFFF; font-family:'gulim','dotum'">{{ post.title }}</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;{{ post.title }}
                 {% if post.subtitle %}
                   {{ post[0].subtitle }}
                 {% endif %}
