@@ -39,9 +39,9 @@
     <div id="cate_div" style="width:240px; display:none; position:absolute; float:left; background-color:#000000; color:#fff; border:1px solid #1a1a1a; z-index:1000px">
       {% for category in site.categories %}
       {% assign cates = category[0] %}
-      <p style="padding-left:10px">
+      <p style="padding-left:20px">
         <a href="javascript:view_sub('{{ category[0] }}')">
-          {{ category[0] }}
+          * {{ category[0] }}
         </a>
         <div id="view_sub_{{ category[0] }}" style="display:none">
           {% for post in site.categories[cates] %}
