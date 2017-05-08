@@ -46,8 +46,8 @@
         <div id="view_sub_{{ category[0] }}" style="display:none">
           {% for post in site.categories[cates] %}
           <div class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#FFFFFF">{{ post.title }}</span>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="subhover">
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px; color:#FFFFFF; font-family:'gulim','dotum'">{{ post.title }}</span>
                 {% if post.subtitle %}
                   {{ post[0].subtitle }}
                 {% endif %}
