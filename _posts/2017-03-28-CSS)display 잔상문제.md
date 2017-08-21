@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CSS) display 사용시 잔상생기는문제 
+title: CSS) display 사용시 잔상생기는문제
 category: html
 ---
 
@@ -24,8 +24,8 @@ tr태그에서 display:block 과 none 사용시 잔상이 발생한다.
 
 //script
 <script>
-  function div_form() { 
-    document.getElementById('viewform').style.display = "block"; 
+  function div_form() {
+    document.getElementById('viewform').style.display = "block";
   }
 </script>
 ```
