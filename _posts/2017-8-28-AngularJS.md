@@ -20,10 +20,10 @@ AngularJS 2.0
 
 AngularJS 에서 component란?
 Template + Class(propertis, method 포함) + Metadata
-> 템플릿(Template)은 앵귤러 프레임워크가 HTML을 템플릿으로 간주하여 1차적으로 앵귤러 구문을 해석하고
+: 템플릿(Template)은 앵귤러 프레임워크가 HTML을 템플릿으로 간주하여 1차적으로 앵귤러 구문을 해석하고
  데이터를 바인딩하는 템플릿 해석기 역할을 한다.
 
-> 지시자(Directive) 는 HTML을 확장하는 앵귤러만의 가장 특별한 기능으로 HTML 태그로서 뷰를 확장할 수 있고,
+: 지시자(Directive) 는 HTML을 확장하는 앵귤러만의 가장 특별한 기능으로 HTML 태그로서 뷰를 확장할 수 있고,
   그 안에 상태와 액션을 담아 컴포넌트화 할 수 있으므로 화면 개발의 생산성을 높여준다.
 
 
