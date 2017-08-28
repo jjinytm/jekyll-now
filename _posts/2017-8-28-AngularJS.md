@@ -42,3 +42,25 @@ View layout
 3) Metadata
 * Angular에 대한 추가 데이터
 * Decorator로 정의한다.
+
+<b>ngFor 기능</b>
+ngFor는 템플릿 중 특정 내용이나 형태를 반복해야 할 때 사용하며 '<li>'형태로 리스트를 작성하는 경우에 유용하다.
+리스트형태의 표현을 해야하는 경우 사용하면 좋다.
+
+```javascript
+@Component({
+	selector: 'my-app',
+	template: ` <h1>{{title}}</h1>
+						  <h2>Member</h2>
+								<ul class="heroes">
+									<li *ngFor="let hero of heroes"> {{hero}} </li>
+									<li *ngFor="let hero of heroes2"> {{hero}} </li>
+								<ul> `
+})
+export class AppComponent {
+	title = '1llionaire Recode';
+	heroes = ["zico", "jlee", "nas"];
+	heroes2 = ["Beenzino", "The Quite", "Dok2"];
+	myHero = this.heroes[0];
+}
+```
