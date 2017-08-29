@@ -86,14 +86,9 @@ module.exports = function(grunt){
 };
 ```
 
-What we made is to configure a Express server on port 3000, serving at localhost the page hosted in the public folder. We also set the livereload  options to true. Note we also added a line into the watch configuration to indicate we are going to use livereload.
-
-On the last three lines there is the definition of the grunt tasks. In the first 2 lines we loaded the default task for Watch and Express and in the last one we defined a custom task that run Express and Watch in sequence.
-
-Now if you start the server using the task we just created
-
+이제 cmd창에 다음과 같은 명령어로 서버를 실행하여 보자.
+```javascript
 grunt server
+```
 
-you will get the livereload feature in every page. Try it by pointing to the index.html and change the  file to write somenthing different. You will see your page reloading automatically.
-
-I’m sure it worth to spend 10 mins on the livereload  implementation instead loosing time pressing the F5 key thousands of times.
+파일의 변경이 일어났을때 웹페이지가 자동으로 새로고침되어 변경내용이 반영된것을 볼 수 있다.
