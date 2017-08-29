@@ -44,7 +44,7 @@ Completed in 0.000s at Fri Mar 27 2015 17:29:16 GMT+0100 (W. Europe Standard Tim
 하지만, 파일이 언제 변경되었는지 알려고 하는것이 아니다.
 정말 필요한것은 파일변경이 일어났을때 브라우저가 자동으로 페이지를 새로고침하고, 변경된 내용을 보여주는 것이다.
 
-<h2>Livereload</h2>
+<h3>Livereload</h3>
 Livereload기능을 사용하기 전에 grunt-express 모듈의 설치가 필요하다.
 
 ```javascript
